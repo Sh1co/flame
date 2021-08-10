@@ -22,7 +22,7 @@ import 'mixins/hitbox.dart';
 /// rendered automatically when this is updated and rendered.
 /// They are translated by this component's (x,y). They do not need to fit
 /// within this component's (width, height).
-abstract class PositionComponent extends BaseComponent {
+class PositionComponent extends BaseComponent {
   /// The position of this component on the screen (relative to the anchor).
   Vector2 get position => _position;
   set position(Vector2 position) => _position.setFrom(position);
